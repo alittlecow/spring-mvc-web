@@ -11,6 +11,7 @@ public class Demo {
     public static void main(String[] args) {
         String location = "classpath*:/aaa/bbb/spring-*.xml";
         System.out.println(determineRootDir(location));
+        System.out.println("lalalal");
 
     }
 
