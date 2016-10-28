@@ -23,7 +23,7 @@
         </property>
     </bean>
 
-    <bean id="sessionFactory" class="com.little.common.hibernate.DinaAnnotationSessionFactoryBean">
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
         <property name="configLocation" value="classpath:/spring/hibernate-mysql.xml"/>
         <property name="packagesToScan">
             <value>com.little</value>

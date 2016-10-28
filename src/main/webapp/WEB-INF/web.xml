@@ -12,16 +12,6 @@
         </param-value>
     </context-param>
 
-    <!-- 加载Spring ApplicationContext -->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-
-    <!-- Spring刷新Introspector防止内存泄露 -->
-    <listener>
-        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
-    </listener>
-
     <!--log4j -->
     <context-param>
         <param-name>log4jConfigLocation</param-name>
@@ -32,6 +22,25 @@
             org.springframework.web.util.Log4jConfigListener
         </listener-class>
     </listener>
+    <!-- 加载Spring ApplicationContext -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!-- Spring刷新Introspector防止内存泄露 -->
+    <!--<listener>-->
+        <!--<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>-->
+    <!--</listener>-->
+
+
+    <servlet>
+        <servlet-name>test1</servlet-name>
+        <servlet-class>com.little.servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test1</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>dispatcher</servlet-name>

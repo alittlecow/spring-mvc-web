@@ -13,9 +13,9 @@ import java.util.Properties;
 public class LittleC3P0ConnectionProvider extends C3P0ConnectionProvider {
     @Override
     public void configure(Properties props) throws HibernateException {
-        props.setProperty("hibernate.connection.url", PropertyHandler.getProperty(props.getProperty("connection.url")));
-        props.setProperty("hibernate.connection.username", PropertyHandler.getProperty(props.getProperty("connection.username")));
-        props.setProperty("hibernate.connection.password", PropertyHandler.getProperty(props.getProperty("connection.password")));
+//        props.setProperty("hibernate.connection.url", PropertyHandler.getProperty(props.getProperty("connection.url")));
+//        props.setProperty("hibernate.connection.username", PropertyHandler.getProperty(props.getProperty("connection.username")));
+//        props.setProperty("hibernate.connection.password", PropertyHandler.getProperty(props.getProperty("connection.password")));
         super.configure(props);
     }
 }
