@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/little</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.little.model.domain.SysSequence"/>
+    <mapping class="com.little.model.domain.TbAnswer"/>
+    <mapping class="com.little.model.domain.TbContact"/>
+    <mapping class="com.little.model.domain.TbCustomline"/>
+    <mapping class="com.little.model.domain.TbDestinationday"/>
+    <mapping class="com.little.model.domain.TbOrder"/>
+    <mapping class="com.little.model.domain.TbQuestion"/>
+    <mapping class="com.little.model.domain.ThOrder"/>
+    <mapping class="com.little.model.domain.ThRating"/>
+    <mapping class="com.little.model.domain.ThTourdate"/>
+    <mapping class="com.little.model.domain.TmAttributeValue"/>
+    <mapping class="com.little.model.domain.TmCateAttribute"/>
+    <mapping class="com.little.model.domain.TmCategory"/>
+    <mapping class="com.little.model.domain.TmCity"/>
+    <mapping class="com.little.model.domain.TmDestinationCity"/>
+    <mapping class="com.little.model.domain.TmDisplay"/>
+    <mapping class="com.little.model.domain.TmDisplayitem"/>
+    <mapping class="com.little.model.domain.TmEndcity"/>
+    <mapping class="com.little.model.domain.TmHotel"/>
+    <mapping class="com.little.model.domain.TmHoteltype"/>
+    <mapping class="com.little.model.domain.TmIndexconfig"/>
+    <mapping class="com.little.model.domain.TmOption"/>
+    <mapping class="com.little.model.domain.TmProductAttribute"/>
+    <mapping class="com.little.model.domain.TmSights"/>
+    <mapping class="com.little.model.domain.TmStartcity"/>
+    <mapping class="com.little.model.domain.TmTheme"/>
+    <mapping class="com.little.model.domain.TmTour"/>
+    <mapping class="com.little.model.domain.TmTourDest"/>
+    <mapping class="com.little.model.domain.TmTourImage"/>
+    <mapping class="com.little.model.domain.TmTourOptionValue"/>
+    <mapping class="com.little.model.domain.TmTourTheme"/>
+    <mapping class="com.little.model.domain.TmTourconfig"/>
+    <mapping class="com.little.model.domain.TmTourdate"/>
+    <mapping class="com.little.model.domain.TmTourdetail"/>
+    <mapping class="com.little.model.domain.TmTourhotel"/>
+    <mapping class="com.little.model.domain.TmValue"/>
+    <mapping class="com.little.model.domain.TsDept"/>
+    <mapping class="com.little.model.domain.TsLevel"/>
+    <mapping class="com.little.model.domain.TsMailhistory"/>
+    <mapping class="com.little.model.domain.TsMailtemplate"/>
+    <mapping class="com.little.model.domain.TsMenu"/>
+    <mapping class="com.little.model.domain.TsModule"/>
+    <mapping class="com.little.model.domain.TsPlate"/>
+    <mapping class="com.little.model.domain.TsPlatform"/>
+    <mapping class="com.little.model.domain.TsRole"/>
+    <mapping class="com.little.model.domain.TsRolemenu"/>
+    <mapping class="com.little.model.domain.TsSystemconfig"/>
+    <mapping class="com.little.model.domain.TsUser"/>
+    <mapping class="com.little.model.domain.User"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

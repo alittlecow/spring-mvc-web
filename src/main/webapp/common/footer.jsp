@@ -24,20 +24,20 @@
                     <li><a href="javascript:void(0);" data-toggle="modal" data-target="#suggestions" id="sug-open"
                            style="color: white"><spring:message code="Suggestions"/></a>
                     </li>
-                    <%--<li><a href="#"><spring:messages code="TermsAndCondition"/></a></li>--%>
+                    <%--<li><a href="#"><spring:message code="TermsAndCondition"/></a></li>--%>
                 </ul>
             </div>
             <%--<div class="col-md-3 col-sm-3">--%>
-            <%--<h3><spring:messages code="Discover"/></h3>--%>
+            <%--<h3><spring:message code="Discover"/></h3>--%>
             <%--<ul>--%>
-            <%--<li><a href="#"><spring:messages code="CommunityBlog"/></a></li>--%>
-            <%--<li><a href="#"><spring:messages code="TourGuide"/></a></li>--%>
-            <%--<li><a href="#"><spring:messages code="Wishlist"/></a></li>--%>
-            <%--<li><a href="#"><spring:messages code="Gallery"/></a></li>--%>
+            <%--<li><a href="#"><spring:message code="CommunityBlog"/></a></li>--%>
+            <%--<li><a href="#"><spring:message code="TourGuide"/></a></li>--%>
+            <%--<li><a href="#"><spring:message code="Wishlist"/></a></li>--%>
+            <%--<li><a href="#"><spring:message code="Gallery"/></a></li>--%>
             <%--</ul>--%>
             <%--</div>--%>
             <%--<div class="col-md-3 col-sm-4">--%>
-            <%--<h3><spring:messages code="Settings"/></h3>--%>
+            <%--<h3><spring:message code="Settings"/></h3>--%>
             <%--<div class="styled-select">--%>
             <%--<select class="form-control" name="lang" id="lang" onchange="changeLanguage(this.value)">--%>
             <%--<option value="English" selected>English</option>--%>

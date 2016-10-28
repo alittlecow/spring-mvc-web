@@ -1,0 +1,10 @@
+to(night|knight|nite)
+
+hot.tonic.tonight!
+....tonight.....
+abc efsfs12090gggggggggggg
+
+123 abc ef
+^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$
+http://www.baidu.com
+http://baike.baidxZy-pGq7B5boMvwm4wOrtqd0tq9L5gd11AcRb1lPeJvPfKwz-vnWMFMyRQRJFNf_
