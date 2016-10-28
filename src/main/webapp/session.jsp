@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: pengx
-  Date: 2016/9/30
-  Time: 16:49
+  Date: 2016/10/28
+  Time: 16:39
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,10 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    hello:<br/>
-    ${id}
-    ${name}
-    ${sex}
-    ${age}
+一访问JSP页面，HttpSession就创建了，创建好的Session的Id是：${pageContext.session.id}
 </body>
 </html>

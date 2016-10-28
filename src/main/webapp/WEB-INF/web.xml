@@ -22,11 +22,24 @@
             org.springframework.web.util.Log4jConfigListener
         </listener-class>
     </listener>
+
+    <listener>
+        <listener-class>
+            com.little.listener.MySessionListener
+        </listener-class>
+    </listener>
+    <listener>
+        <listener-class>
+            com.little.listener.MyRequsetLisenter
+        </listener-class>
+    </listener>
     <!-- 加载Spring ApplicationContext -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-
+    <listener>
+        <listener-class>com.little.listener.MyContextListener</listener-class>
+    </listener>
     <!-- Spring刷新Introspector防止内存泄露 -->
     <!--<listener>-->
         <!--<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>-->
@@ -36,6 +49,10 @@
     <servlet>
         <servlet-name>test1</servlet-name>
         <servlet-class>com.little.servlet.TestServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/classes/config/jdbc.properties</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>test1</servlet-name>
@@ -75,9 +92,18 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>myFilter</filter-name>
+        <filter-class>com.little.filter.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>myFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <!-- session config -->
     <session-config>
-        <session-timeout>60</session-timeout>
+        <session-timeout>1</session-timeout>
     </session-config>
 
     <welcome-file-list>
