@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-           http://www.springframework.org/schema/beans/spring-beans-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+           http://www.springframework.org/schema/beans/spring-beans-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
     <context:component-scan base-package="com.little">
@@ -40,5 +41,19 @@
     <bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
+
+    <!--aop测试-->
+
+    <bean id="h1" class="com.px.aop.HelloWorld1" />
+    <bean id="h2" class="com.px.aop.HelloWorld2" />
+    <bean id="timeHandler" class="com.px.aop.TimeHandler" />
+
+    <aop:config>
+        <aop:aspect id="time" ref="timeHandler">
+            <aop:pointcut id="addAllMethod" expression="execution(* com.px.aop.HelloWorld2.*(..))" />
+            <aop:before method="printTime" pointcut-ref="addAllMethod" />
+            <aop:after method="sayHello" pointcut-ref="addAllMethod" />
+        </aop:aspect>
+    </aop:config>
 
 </beans>

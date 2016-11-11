@@ -23,23 +23,23 @@
         </listener-class>
     </listener>
 
-    <listener>
-        <listener-class>
-            com.little.listener.MySessionListener
-        </listener-class>
-    </listener>
-    <listener>
-        <listener-class>
-            com.little.listener.MyRequsetLisenter
-        </listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>-->
+            <!--com.little.listener.MySessionListener-->
+        <!--</listener-class>-->
+    <!--</listener>-->
+    <!--<listener>-->
+        <!--<listener-class>-->
+            <!--com.little.listener.MyRequsetLisenter-->
+        <!--</listener-class>-->
+    <!--</listener>-->
     <!-- 加载Spring ApplicationContext -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-    <listener>
-        <listener-class>com.little.listener.MyContextListener</listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>com.little.listener.MyContextListener</listener-class>-->
+    <!--</listener>-->
     <!-- Spring刷新Introspector防止内存泄露 -->
     <!--<listener>-->
         <!--<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>-->
@@ -92,14 +92,14 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <filter>
-        <filter-name>myFilter</filter-name>
-        <filter-class>com.little.filter.MyFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>myFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--<filter>-->
+        <!--<filter-name>myFilter</filter-name>-->
+        <!--<filter-class>com.little.filter.MyFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>myFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
     <!-- session config -->
     <session-config>

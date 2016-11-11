@@ -12,6 +12,7 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
+
     <mvc:annotation-driven>
         <!--<mvc:message-converters>-->
             <!--<bean id="fastJsonHttpMessageConverter"-->
@@ -42,6 +43,8 @@
             <!--</bean>-->
         <!--</mvc:message-converters>-->
     </mvc:annotation-driven>
+
+    <mvc:default-servlet-handler />
     <!-- JSP视图解析器,对模型视图名称的解析，即在模型视图名称添加前后缀  -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>

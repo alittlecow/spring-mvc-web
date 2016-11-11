@@ -19,6 +19,9 @@ public class User {
 
     private int age;
 
+    public User() {
+    }
+
     public void setAge(Integer age) {
         this.age = age;
     }
@@ -85,5 +88,15 @@ public class User {
         result = 31 * result + (sex != null ? sex.hashCode() : 0);
         result = 31 * result + age;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

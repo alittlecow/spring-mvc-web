@@ -10,7 +10,9 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<%--<body style="background-image: url('img/slides_bg/slide_2.jpg')">--%>
+<body background="img/slides_bg/slide_2.jpg">
 一访问JSP页面，HttpSession就创建了，创建好的Session的Id是：${pageContext.session.id}
+<%--<img alt="" src="img/product/2.jpg">--%>
 </body>
 </html>
